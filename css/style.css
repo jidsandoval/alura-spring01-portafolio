@@ -422,26 +422,25 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (max-width: 425px) {
 
 /*Menu*/
-.tudo {
-    font-size: 13px;
-    width: 425px;
-}
-/*Titulo*/
-.menu{
+body {
     width: 424px;
 }
+/*Titulo*/
+.menu {
+    width: 70vh;
+} 
+.title, .about{
+    width: 100vw;
 
-.title__network {
-  justify-content: flex-start;
- 
 }
-.title__div {
-    width: 640px;
+
+
 }
 .title__div {
     display: flex;
     flex-direction:column;
     align-items: flex-start;
+    width: 100vw;
 }
 
 .title__profile {
@@ -451,11 +450,14 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 .title__container {
     width: 640px;
-   
-
     font-size: 12px;
     text-align: justify;
 
+}
+.title__network {
+    width: 158vw;
+    height: auto;
+    justify-content: space-between;
 }
 /*Sección sobre mi*/
 .about {
@@ -464,25 +466,28 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 .about__container {
     width: 640px;
-    padding: 0 0;
-    
 
 }
 /*Hobbies*/
 /*Skills*/
 .skills__title, .hobbies__title, .academic__title, .experience__section__title, .footer__rodape{
-    
+    width: 100vw;
+
 }
 .skills__line, .hobbies__line {
+    width: 200vw;
    display: grid;
-   grid-template-columns: 30% 30%;
+   grid-template-columns: 40% 40%;
     
 }
 
 .skills__box {
-    text-align: center;
+    align-items: center;
+    text-align:left;
     width: 156px;
     height: 118px;
+    padding: 0%;
+    margin: 0%;
 }
  
 /*Formación Académica*/
