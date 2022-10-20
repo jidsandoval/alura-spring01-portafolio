@@ -128,7 +128,9 @@ https://en.bem.info/methodology/quick-start/*/
 }
 /*Section skills*/
 .skills__title, .hobbies__title, .academic__title, .experience__section__title, .footer {
+    width: 100vw;
     text-align: center;
+    padding-left: 30px;
 }
 
 .skills__line, .hobbies__line{
@@ -144,6 +146,7 @@ https://en.bem.info/methodology/quick-start/*/
     width: 176px;
     height: 174px;
     background:#ffffff;
+    padding-left: 30px;
 }
 
 /*Sección Hobbies*/
@@ -158,6 +161,7 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 3rem;
 
 }
 
@@ -296,11 +300,6 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 @media (max-width: 768px) {
 
-.tudo {
-        font-size: 13px;
-           width: 767px;
-        
-    }
 /* Menú */
 .menu__list {
     display:none;
@@ -369,7 +368,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Contacto*/
 
-.formcontato--esquerda {
+.formcontato__img {
     display: none;
 }
 
