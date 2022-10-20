@@ -190,8 +190,8 @@ https://en.bem.info/methodology/quick-start/*/
 /*Contacto*/
 
 .formcontato{
-    width: 1440px;
-    height: 788px;
+    width: 678px;
+    height: auto;
     background: #eaf2fd;
 
 }
@@ -334,6 +334,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*title*/
 
 /*Skills*/
+/*Hobbies*/
 
 .skills__line, .hobbies__line {
     display: flex;
@@ -344,7 +345,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     align-content: space-between;
 
 }
-}
+
 .skills__box, .hobbies__box {
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -352,12 +353,25 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 118px;
 }
 
-
-/*Hobbies*/
-
 /*Formación Académica*/
 
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /*Experiencia Profesional*/
+.experiencie__box, .experiencie__box {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Contacto*/
+
+.formcontato--esquerda {
+    display: none;
+}
 
 }
 
@@ -365,9 +379,35 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (max-width: 425px) {
 
 /*Menu*/
-
+.tudo {
+    font-size: 13px;
+    width: 425px;
+}
 /*Titulo*/
+.menu{
+    width: 424px;
 
+}
+.menu__header {
+  
+ 
+}
+
+.title__div {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.title__profile {
+
+    width: 98px;
+    height: 98px;
+}
+.title__container {
+    font-size: 12px;
+    text-align: justify;
+}
 /*Sección sobre mi*/
 
 /*Skills*/
