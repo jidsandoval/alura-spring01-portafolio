@@ -1,4 +1,4 @@
-/*CSS Reset / Normalize*/
+LoMilKi/*CSS Reset / Normalize*/
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
@@ -15,10 +15,9 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin: 0;
-    padding: 50px;
+    padding: 30px;
     line-height: 1;
-    width: 90vw;
+ 
 }
 ol, ul,li {
     list-style: none;
@@ -26,10 +25,6 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
-}
-.tudo {
-    width: 100wh;
-    height: auto;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -47,18 +42,19 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 .menu{
-    max-width: 1500px;
+    width: 100vw;
     height: 50px;
     display: flex;
     align-items:center;
     justify-content: space-between;
+    font-size: 1em;
            
 }
 
 .logo {
-    width: 16px;
-    height: 16px;
-    padding-left: 40px;
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
 }
 
 .menu__header {
@@ -67,29 +63,23 @@ https://en.bem.info/methodology/quick-start/*/
 
 }
 
-.menu__title {
-    padding-left: 40px;
-}
-
 .menu__list {
     display: flex;
 }
 
 .menu__list__item {
     list-style: none;
-    padding: 10px 20px;
+    padding: 0px 10px;
 }
 
 .menu__list__item:hover {
     background-color: aquamarine;
 
 }
-
-
-
 /*Sección Title*/
-.about {
-   
+h2 { 
+    font-size: 3rem;
+    font-weight: bold; 
 }
 
 
@@ -97,46 +87,55 @@ https://en.bem.info/methodology/quick-start/*/
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 1em;
+    width: 95vw;
+
 }
 .title__profile {
     width: 368px;
     height: 368px;
 }
 
-.title__container {
-   
+.title__bio {
+    font-size: 32px;
+
 }
 
 .title__network {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:flex-start
+   
 }
 
 .title__network__item {
     padding-right: 30px;
+    font-size: .7rem;
 }
 
 /*Sección About*/
-
 .about{
-    width: 751px;
-    height: 133px;
-    padding-bottom: 150px;
+    width: 80vw;
+    height:auto;
+    padding-bottom: 60px;
+}
 
+.about__title {
+    font-size: 32px;
+    font-weight: bold;
 }
 /*Section skills*/
-.skills__title, .hobbies__title, .academic__title, .experience__section__title, .footer {
+.skills__title,.hobbies__title, .academic__title, .experience__section__title, .footer {
     width: 100vw;
     text-align: center;
-    padding-left: 30px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .skills__line, .hobbies__line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    justify-content: left;
 }
 
 .skills__box, .hobbies__box {
@@ -151,23 +150,24 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Hobbies*/
 
-.hobbies{
-    
-}
+
 
 /* Experiencia Académica*/
 
+.academic {
+    width: 100vw;
+ 
+}
 .academic__courses{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 3rem;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.8rem;
 
 }
 
-.academic__courses__box {
- 
-}
 .academic__courses__item__img {
     width: 190px;
     height: 130px;
@@ -175,16 +175,20 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 /* experiencia*/
-
-.experiencie__box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-
+.experience {
+    width: 90vw;
 }
 
+.experiencie__box{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.experience__img {
+    width: 768px;
+    height: auto;
+}
 .modificador {
     flex-direction: row-reverse;
 }
@@ -194,35 +198,42 @@ https://en.bem.info/methodology/quick-start/*/
 /*Contacto*/
 
 .formcontato{
-    width: 678px;
+    background: #2A7AE4;
+    width: 80vw;
     height: auto;
     background: #eaf2fd;
 
 }
 .formcontato__img {
     width: 464px;
-    height: 593px;
+    height: 583px;
+}
+
+.formcontato__contacto {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+  
+}
+.formcontato__text {
+    width: 30vw;
 }
 .formcontato__title {
-    margin: 0 0;
+
     margin-bottom: 10px;
     font-weight: bold;
 }
 .formcontato__subtext {
-    margin:0 0;
+    
     font-weight: lighter;
    
 }
 .completa__formulario {
     margin-bottom: 30px;
 }
-.formcontato__contacto {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 64px;
-  
-}
+
 .formcontato__form {
     display: flex;
     flex-direction: column;
@@ -240,16 +251,16 @@ https://en.bem.info/methodology/quick-start/*/
 }
 
 .text, .email {
-    width: 656px;
-    height: 56px;
+    width: auto;
+    height: auto;
     margin-bottom: 18px;
 }
 .email::-webkit-input-placeholder {
     color: blue;
 }
 .text_area {
-    width:656px;
-    height: 133px;
+    width:auto;
+    height: auto;
     margin-bottom: 9px;
 }
 
@@ -263,10 +274,6 @@ https://en.bem.info/methodology/quick-start/*/
     
 }
 /*footeer*/
-
-.footer{
-   
-}
 
 /*Modificacion botones*/
 
@@ -300,6 +307,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 @media (max-width: 768px) {
 
+
 /* Menú */
 .menu__list {
     display:none;
@@ -324,26 +332,20 @@ Utiliza las referencias de los breakpoints @media abajo */
     width: 146px;
     height: 146px;
 }
-.title__container {
-    font-size: 12px;
-}
-
-
-
-/*title*/
+ /*title*/
 
 /*Skills*/
 /*Hobbies*/
 
 .skills__line, .hobbies__line {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 767px;
-    height: 100%;
-    align-content: space-between;
-
+    width: 100vw;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
 }
+
+
 
 .skills__box, .hobbies__box {
     margin-right: 1rem;
@@ -352,7 +354,25 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 118px;
 }
 
+.formcontato__img{
+    display:none;
+
+
+}
+/*Hobbies*/
+
 /*Formación Académica*/
+.academic {
+    padding-left: auto;
+   
+}
+.academic__courses__box {
+    width:224px;
+    height: 11px;
+    padding-bottom: 10rem;
+    margin: 10px;
+  
+}
 
 .academic__courses {
     display: flex;
@@ -368,7 +388,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Contacto*/
 
+
+
+
 .formcontato__img {
+
     display: none;
 }
 
@@ -385,13 +409,15 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Titulo*/
 .menu{
     width: 424px;
-
 }
-.menu__header {
-  
+
+.title__network {
+  justify-content: flex-start;
  
 }
-
+.title__div {
+    width: 640px;
+}
 .title__div {
     display: flex;
     flex-direction:column;
@@ -404,20 +430,61 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 98px;
 }
 .title__container {
+    width: 640px;
+   
+
     font-size: 12px;
     text-align: justify;
+
 }
 /*Sección sobre mi*/
+.about {
+    width: 640px;
+    padding-bottom: 150px;
+}
+.about__container {
+    width: 640px;
+    padding: 0 0;
+    
 
-/*Skills*/
-
+}
 /*Hobbies*/
+/*Skills*/
+.skills__title, .hobbies__title, .academic__title, .experience__section__title, .footer__rodape{
+    padding-left: 200px;
+}
+.skills__line, .hobbies__line {
+   display: grid;
+   grid-template-columns: 30% 30%;
+    
+}
+
+.skills__box {
+    text-align: center;
+    width: 156px;
+    height: 118px;
+}
  
 /*Formación Académica*/
-
+.academic__courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 90px;
+}
 /*Experiencia Profesional*/
+.experience__img {
+
+    width: 606px;
+    height: auto;
+
+}
 
  /*Contacto*/
+ .formcontato__text{
+    width: 500px;
+    height: auto;
+ }
 
 /*Footer*/
 
